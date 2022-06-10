@@ -9,3 +9,5 @@ class Product(models.Model):
     quantity = models.IntegerField()
     expiry = models.DateField(null=True)
 
+    def __str__(self):
+        return f'{self.name}'
